@@ -1,7 +1,7 @@
-def position_taken?(board, index = "X" || "O")
-  if board[index] == "" || board[index] == " "
-    false
-  else board[index] != "" || board[index] != " "
+def position_taken?(board, index)
+  if board[index] != "" || board[index] != " "
     true
+  else board[index] == "" || board[index] == " "
+    false  
 end
 end
